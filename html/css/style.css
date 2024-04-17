@@ -1,0 +1,142 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variablea */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Nevigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+/* Nevigationbar logo or image */
+
+#logo{
+    /* display: inline-block;
+    position: absolute;
+    right: 35px;*/
+
+    margin: 4px 4px;
+}
+#logo img{
+    height: 50px;
+    margin: 8px 15px;
+}
+
+/*  Nevigationbar list style */
+#navbar{
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(114, 50, 50);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 2px 23px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: rgb(7, 7, 7);
+    background-color: white;
+}
+
+/* Hpme section */
+#home{
+    color: white;
+    flex-direction: column;
+    display: flex;
+    height: 640px;
+    padding: 3px 200px ;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+ #home::before{
+    content: "";
+    background :url("../krishna3.jpg") no-repeat center center/cover ;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.50;
+}
+
+#home h1{
+    color: #bc2626;
+    text-align: center;
+}
+
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family:'Arial Narrow Bold';
+}
+
+/* services Class */
+#services{
+    margin: 40px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid brown;
+    padding: 10px;
+    margin: 0px 10px;
+}
+
+#services .box img{
+    height: 250px;
+    display: block;
+    margin: auto;
+}
+
+/* Utility Classes */
+.h-parimary{
+    font-size: 3.8rem;
+    padding: 12px;
+    text-align: center;
+}
+
+.h-secondery{
+    font-size: 1.8rem;
+    padding: 12px;
+    text-align: center;
+}
+
+
+.btn{
+    margin: 12px 12px;
+    padding:10px 55px;
+    border: 2px solid black;
+    background-color: rgb(228, 222, 222);
+    border-radius: 20px 0px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(240, 233, 233);
+    border-radius: 0px 20px;
+}
