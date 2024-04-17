@@ -1,0 +1,41 @@
+#navigation{
+    flex-direction: column;
+}
+
+#navigation ul li a{
+    font-size: 1rem;
+    padding: 0px 5px;
+}
+
+#Home{
+    height: 200px;
+    padding: 3px 0px;
+}
+
+#Home::before{
+    
+   
+    height: 500px;
+}
+
+#Home P{
+    font-size: 10px;
+}
+#services{
+    flex-direction: column;
+} 
+
+
+#Home h1{
+    
+    font-size: 25px;
+}
+
+#services .box img{
+    height: 100px;
+}
+
+#services .box3 img{
+    height: 80px;
+}
+
